@@ -1,0 +1,121 @@
+/* Presenting content */
+* {
+	box-sizing: border-box;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color:#101131;
+
+}
+
+figure{
+
+	margin:0;
+	padding:0;
+	position:absolute;
+	left:-5em;
+	top:30em;
+	mix-blend-mode: hard-light;
+	
+
+}
+
+
+header {
+	padding: 0;
+	max-width: 10em;
+	position:absolute;
+	top:5em;
+	left: 20px;
+	margin: 0 auto;
+	color: black;
+}
+main {
+	position:absolute;
+	left: 400px;
+	top: 40px;
+	padding: 2em 0.25em;
+	background-color: none;
+}
+section {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+h1 {
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+h2 {
+	background-color: white;
+	color: #4fffa7;
+	display: inline;
+	max-width: 30em;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.25em;
+}
+
+summary {
+	margin: 0;
+	padding: 0;
+	font-size: 1.25em;
+	font-weight:700;
+	outline: none;
+	cursor: pointer;
+	transition: color 0.4s;
+
+}
+summary:hover {
+	color: limegreen;
+
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+date {
+	color: white;
+	display: block;
+}
+.toggle{
+	cursor:pointer;
+}
+
+.toggle p{
+	opacity:0;
+	transition: all 0.5s;
+	transition-delay:0.5s;
+	height: 0;
+	overflow: hidden;
+}
+
+.toggle h3{
+	transition: all 0.5s;
+}
+
+.show p{
+	opacity:2;
+	height:auto;
+	overflow:visible;
+	transform: translate x (0);
+}
+
+.show h3{
+	color:#5a4fff;
+	transform:translate y(-0.5em);
+}
+
+
+
